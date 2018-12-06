@@ -1,6 +1,6 @@
 {
   "name": "wirecast-control",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Promise based Wirecast control for Node.js.",
   "main": "index.js",
   "scripts": {
