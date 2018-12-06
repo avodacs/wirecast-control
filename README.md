@@ -38,6 +38,32 @@ doc.queueActiveShot('Master Layer 2', 'Background Video');
 doc.executeQueue();
 ```
 
+### Multi Document Queue Execution
+
+When working with multiple documents, it can be more efficient to build up the queue for each Document, and then execute them all at the same time.  There is a static method `executeDocumentsQueues` which can help with this.
+
+```js
+const WirecastDocument = require('wirecast-control');
+
+// First Document
+let docA = new WirecastDocument('Document A', {
+  autoLive: true
+});
+
+docA.queueActiveShot('Master Layer 2', 'Clear Layer');
+docA.queueActiveShot('Master Layer 3', 'Clear Layer');
+
+// Second Document
+let docB = new WirecastDocument('Document B', {
+  autoLive: true
+});
+
+docB.queueActiveShot('Master Layer 2', 'Clear Layer');
+docB.queueActiveShot('Master Layer 3', 'Clear Layer');
+
+WirecastDocument.executeDocumentsQueues([docA, docB]);
+```
+
 More examples can be found in [examples](examples/).  These examples don't all show async/await or the use of Promises, but Promises can be used.
 
 ## Debugging
