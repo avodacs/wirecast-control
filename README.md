@@ -22,6 +22,22 @@ let doc = new WirecastDocument('MyDocument', {
 doc.setActiveShot('Master Layer 1', 'Placeholder Slide');
 ```
 
+### Queueing
+
+If multiple commands are going to be executed together, it's more efficient to queue them and them submit them in a batch.  Otherwise, each individual command, if executed independently, but multiple times, will incur additional overhead.
+
+```js
+const WirecastDocument = require('wirecast-control');
+
+let doc = new WirecastDocument('MyDocument', {
+  autoLive: true
+});
+
+doc.queueActiveShot('Master Layer 1', 'Placeholder Slide');
+doc.queueActiveShot('Master Layer 2', 'Background Video');
+doc.executeQueue();
+```
+
 More examples can be found in [examples](examples/).  These examples don't all show async/await or the use of Promises, but Promises can be used.
 
 ## Debugging
