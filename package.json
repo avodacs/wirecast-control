@@ -1,0 +1,14 @@
+{
+  "name": "wirecast-control",
+  "version": "0.0.1",
+  "description": "Wirecast Controller",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Wirecast"
+  ],
+  "author": "Avoda Consulting Services, LLC <erick@avodacs.com>",
+  "license": "MIT"
+}
