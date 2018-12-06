@@ -11,6 +11,14 @@
   ],
   "author": "Avoda Consulting Services, LLC <erick@avodacs.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avodacs/wirecast-control/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avodacs/wirecast-control.git"
+  },
+  "homepage": "https://github.com/avodacs/wirecast-control#readme",
   "dependencies": {
     "applescript": "^1.0.0",
     "debug": "^4.1.0"
