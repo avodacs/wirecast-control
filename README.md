@@ -22,7 +22,7 @@ let doc = new WirecastDocument('MyDocument', {
 doc.setActiveShot('Master Layer 1', 'Placeholder Slide');
 ```
 
-More examples can be found in [examples](examples/).
+More examples can be found in [examples](examples/).  These examples don't all show async/await or the use of Promises, but Promises can be used.
 
 ## Debugging
 
