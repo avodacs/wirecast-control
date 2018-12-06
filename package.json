@@ -10,5 +10,9 @@
     "Wirecast"
   ],
   "author": "Avoda Consulting Services, LLC <erick@avodacs.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "applescript": "^1.0.0",
+    "debug": "^4.1.0"
+  }
 }
